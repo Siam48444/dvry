@@ -7,3 +7,16 @@ gsap.ticker.add((time) => {
 });
 
 gsap.ticker.lagSmoothing(0);
+
+// hero load animations.
+var tl = gsap.timeline();
+
+tl.from(".load_appear_texts", {
+   y: "100%",
+   duration: 0.7,
+   stagger: 0.3,
+});
+tl.to(".hero_image_containers_shutters", {
+   y: "-100%",
+   duration: 0.7,
+});

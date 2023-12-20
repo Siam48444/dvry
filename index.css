@@ -155,6 +155,14 @@ nav {
 
    .hero_line_divs {
       flex-direction: column;
+      justify-content: center;
+
+      &:nth-child(1) {
+         align-items: flex-start;
+      }
+      &:nth-child(2) {
+         align-items: flex-end;
+      }
    }
 
    .hero_image_containers {
@@ -166,5 +174,39 @@ nav {
 @media (width <= 800px) {
    .nav_right {
       display: none;
+   }
+
+   .hero_main {
+      & h1 {
+         font-size: 4.5rem;
+      }
+   }
+}
+
+@media (width <= 500px) {
+   .hero_main {
+      & h1 {
+         font-size: 3.5rem;
+      }
+   }
+
+   .hero_image_containers {
+      width: 20em;
+      height: 5em;
+   }
+}
+
+@media (width <= 400px) {
+   .hero_main {
+      & h1 {
+         font-size: 3rem;
+         letter-spacing: 3px;
+      }
+   }
+
+   .hero_image_containers {
+      width: 100%;
+      height: 4.5em;
+      border-radius: 1.2em;
    }
 }

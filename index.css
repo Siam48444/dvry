@@ -15,3 +15,9 @@ html {
    padding: 0;
    position: relative;
 }
+
+:root {
+   /* Colors */
+   --Black: #121212;
+   --White: #ffffff;
+}

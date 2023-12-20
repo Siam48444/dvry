@@ -90,15 +90,15 @@ nav {
    flex-direction: column;
    align-items: center;
    justify-content: flex-end;
-   height: 55%;
    gap: 5em;
    padding-inline: clamp(2em, 6vw, 5.5vw);
+   padding-block: 10em;
    position: relative;
 
    & h1 {
       font-family: InterTight_Medium, Arial, Helvetica, sans-serif;
       color: var(--White);
-      font-size: clamp(3.5rem, 8vw, 8vw);
+      font-size: clamp(5.5rem, 8vw, 8vw);
       letter-spacing: 7px;
    }
 }
@@ -126,7 +126,7 @@ nav {
 .hero_image_containers {
    width: 28em;
    height: 8em;
-   border-radius: 1.5em;
+   border-radius: 2em;
    overflow: hidden;
    user-select: none;
    position: relative;
@@ -145,6 +145,22 @@ nav {
    inset: 0;
    background-color: var(--Black);
    z-index: 2;
+}
+
+@media (width <= 1000px) {
+   .hero_main {
+      height: max-content;
+      padding-block: 4em;
+   }
+
+   .hero_line_divs {
+      flex-direction: column;
+   }
+
+   .hero_image_containers {
+      width: 25em;
+      height: 6em;
+   }
 }
 
 @media (width <= 800px) {

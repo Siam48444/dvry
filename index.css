@@ -237,6 +237,31 @@ nav {
    }
 }
 
+#section3 {
+   width: 100%;
+   overflow: hidden;
+   padding: 2em clamp(2em, 6vw, 5.5vw);
+}
+
+.section3_title {
+   position: relative;
+   height: max-content;
+   width: max-content;
+
+   & h1 {
+      color: var(--White);
+      font-family: InterTight_Bold, Arial, Helvetica, sans-serif;
+      font-size: 10rem;
+   }
+
+   & svg {
+      position: absolute;
+      width: 3em;
+      right: -10%;
+      top: 0;
+   }
+}
+
 @media (width <= 1000px) {
    .hero_main {
       padding-top: 4em;

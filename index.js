@@ -27,6 +27,7 @@ tl.from(".load_appear_texts", {
    y: "100%",
    duration: 0.5,
    stagger: 0.3,
+   pointerEvents: "none",
    ease: "power1.inOut",
 });
 tl.to(".hero_image_containers_shutters", {
@@ -36,6 +37,7 @@ tl.to(".hero_image_containers_shutters", {
    ease: "power1.inOut",
 });
 tl.from("nav, .hero_bottom", {
+   pointerEvents: "none",
    scale: 0.95,
    opacity: 0,
    duration: 0.5,

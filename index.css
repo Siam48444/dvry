@@ -247,6 +247,7 @@ nav {
    position: relative;
    height: max-content;
    width: max-content;
+   margin-bottom: 3em;
 
    & h1 {
       color: var(--White);
@@ -270,7 +271,7 @@ nav {
 }
 
 .sample_boxes {
-   border-radius: 2em;
+   border-radius: 1.5em;
    overflow: hidden;
    position: relative;
    aspect-ratio: 16 / 10;
@@ -291,7 +292,23 @@ nav {
 
 .sample_boxes_title {
    position: absolute;
-   display: none;
+   left: 2em;
+   bottom: 2em;
+   z-index: 3;
+
+   & p {
+      font-family: InterTight_Light, Arial, Helvetica, sans-serif;
+      color: var(--White);
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+   }
+
+   & h3 {
+      font-family: InterTight_Medium, Arial, Helvetica, sans-serif;
+      color: var(--White);
+      font-size: 3rem;
+      letter-spacing: 2px;
+   }
 }
 
 @media (width <= 1000px) {

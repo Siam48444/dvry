@@ -51,7 +51,6 @@ tl.from("nav, .hero_bottom", {
 gsap.from("#section2 h1", {
    opacity: 0,
    x: "-10%",
-   ease: "power1.inOut",
    duration: 0.5,
    scrollTrigger: {
       trigger: "#section2 h1",

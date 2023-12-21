@@ -64,9 +64,8 @@ html {
 
 #section1 {
    width: 100%;
-   height: 100vh;
-   height: 100svh;
-   overflow: hidden;
+   height: max-content;
+   /* overflow: hidden; */
 }
 
 nav {
@@ -183,10 +182,10 @@ nav {
 
 .hero_bottom {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: repeat(3, 1fr);
    width: 100%;
-   padding-inline: clamp(2em, 6vw, 5.5vw);
-   padding-block: clamp(3em, 4vw, 4vw);
+   height: 20em;
+   padding: 3em clamp(2em, 6vw, 5.5vw);
 }
 
 .hero_bottom_left {
@@ -195,6 +194,7 @@ nav {
    justify-content: center;
    gap: 0.8em;
    grid-column: 1 / 2;
+   height: 100%;
 
    & svg {
       width: clamp(1.3em, 2vw, 1.6vw);
@@ -207,6 +207,7 @@ nav {
    align-items: center;
    justify-content: center;
    grid-column: 3 / 4;
+   height: 100%;
 
    & p {
       color: var(--White);
@@ -214,6 +215,24 @@ nav {
       font-size: clamp(1rem, 1.5vw, 1.2vw);
       text-align: left;
       line-height: 1.4;
+   }
+}
+
+#section2 {
+   width: 100%;
+   height: 100vh;
+   height: 100svh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 5em clamp(2em, 6vw, 5.5vw);
+
+   & h1 {
+      color: var(--White);
+      font-size: clamp(1.5rem, 4vw, 3.5vw);
+      font-family: InterTight_Medium, Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+      letter-spacing: 1.5px;
    }
 }
 
@@ -238,6 +257,16 @@ nav {
    .hero_image_containers {
       width: 25em;
       height: 6em;
+   }
+
+   .hero_bottom {
+      grid-template-rows: repeat(2, auto);
+      height: 20em;
+   }
+
+   .hero_bottom_right {
+      grid-row: 2 / 3;
+      grid-column: 1 / 4;
    }
 }
 

@@ -251,12 +251,12 @@ nav {
    & h1 {
       color: var(--White);
       font-family: InterTight_Bold, Arial, Helvetica, sans-serif;
-      font-size: 10rem;
+      font-size: clamp(2.5rem, 13vw, 13vw);
    }
 
    & svg {
       position: absolute;
-      width: 3em;
+      width: clamp(1em, 5vw, 3vw);
       right: -10%;
       top: 0;
    }

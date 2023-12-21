@@ -26,17 +26,19 @@ tl.to("#loader", {
 tl.from(".load_appear_texts", {
    y: "100%",
    duration: 0.5,
-   ease: "power1.inOut",
    stagger: 0.3,
+   ease: "power1.inOut",
 });
 tl.to(".hero_image_containers_shutters", {
    y: "-100%",
    duration: 0.5,
+   stagger: 0.1,
    ease: "power1.inOut",
 });
 tl.from("nav, .hero_bottom", {
    scale: 0.95,
    opacity: 0,
    duration: 0.5,
+   stagger: 0.1,
    ease: "power1.inOut",
 });

@@ -262,6 +262,38 @@ nav {
    }
 }
 
+.sample_boxes_div {
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 1em;
+}
+
+.sample_boxes {
+   border-radius: 2em;
+   overflow: hidden;
+   position: relative;
+   aspect-ratio: 16 / 10;
+
+   &:hover .sample_images {
+      scale: 1.15;
+   }
+}
+
+.sample_images {
+   width: 105%;
+   height: 105%;
+   object-fit: cover;
+   filter: brightness(0.5);
+   transition: 300ms ease;
+   transition-property: scale;
+}
+
+.sample_boxes_title {
+   position: absolute;
+   display: none;
+}
+
 @media (width <= 1000px) {
    .hero_main {
       padding-top: 4em;

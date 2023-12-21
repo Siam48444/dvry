@@ -238,7 +238,6 @@ nav {
 
 @media (width <= 1000px) {
    .hero_main {
-      height: max-content;
       padding-top: 4em;
    }
 

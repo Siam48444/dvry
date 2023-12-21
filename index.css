@@ -226,10 +226,11 @@ nav {
    align-items: center;
    justify-content: center;
    padding: 5em clamp(2em, 6vw, 5.5vw);
+   overflow: hidden;
 
    & h1 {
       color: var(--White);
-      font-size: clamp(1.5rem, 4vw, 3.5vw);
+      font-size: clamp(1.2rem, 4vw, 3.5vw);
       font-family: InterTight_Medium, Arial, Helvetica, sans-serif;
       line-height: 1.5;
       letter-spacing: 1.5px;

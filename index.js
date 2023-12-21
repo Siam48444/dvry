@@ -20,7 +20,8 @@ tl.to(".hero_image_containers_shutters", {
    y: "-100%",
    duration: 0.7,
 });
-tl.from("nav", {
+tl.from("nav, .hero_bottom", {
+   scale: 0.95,
    opacity: 0,
    duration: 0.7,
 });

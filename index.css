@@ -16,7 +16,7 @@ body,
 html {
    width: 100%;
    box-sizing: border-box;
-   overflow-x: hidden;
+   overflow: hidden auto;
    scroll-behavior: smooth;
    margin: 0;
    padding: 0;
@@ -167,7 +167,7 @@ nav {
    grid-template-columns: 1fr 1fr 1fr;
    width: 100%;
    padding-inline: clamp(2em, 6vw, 5.5vw);
-   padding-block: 4em 13em;
+   padding-block: clamp(3em, 4vw, 4vw) clamp(8em, 13vw, 15vw);
 }
 
 .hero_bottom_left {
@@ -194,7 +194,7 @@ nav {
       font-family: InterTight_Light, Arial, Helvetica, sans-serif;
       font-size: clamp(1rem, 1.5vw, 1.2vw);
       text-align: left;
-      line-height: 1.5;
+      line-height: 1.4;
    }
 }
 

@@ -57,3 +57,13 @@ gsap.from("#section2 h1", {
       start: "top 85%",
    },
 });
+
+// Section3 scroll box shutter openning.
+gsap.to(".sample_boxes_shutter", {
+   y: "-100%",
+   duration: 0.5,
+   scrollTrigger: {
+      trigger: ".sample_boxes_shutter",
+      start: "top 80%",
+   },
+});

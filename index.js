@@ -8,8 +8,10 @@ gsap.ticker.add((time) => {
 
 gsap.ticker.lagSmoothing(0);
 
-// hero load animations.
+//GSAP Timeline
 var tl = gsap.timeline();
+
+// hero load animations.
 
 tl.to("#loader h3", {
    opacity: 0,
@@ -43,4 +45,16 @@ tl.from("nav, .hero_bottom", {
    duration: 0.5,
    stagger: 0.1,
    ease: "power1.inOut",
+});
+
+// Section2 scroll text appearing.
+gsap.from("#section2 h1", {
+   opacity: 0,
+   x: "-10%",
+   ease: "power1.inOut",
+   duration: 0.5,
+   scrollTrigger: {
+      trigger: "#section2 h1",
+      start: "top 85%",
+   },
 });

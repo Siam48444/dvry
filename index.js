@@ -69,19 +69,35 @@ gsap.from(".section3_title", {
 });
 
 // Section3 scroll box shutter openning.
-gsap.to(".sample_boxes_shutter1, .sample_boxes_shutter2", {
+gsap.to(".sample_boxes_shutter1", {
    y: "-100%",
    duration: 0.5,
    scrollTrigger: {
-      trigger: ".sample_boxes_shutter1, .sample_boxes_shutter2",
+      trigger: ".sample_boxes_shutter1",
       start: "top 85%",
    },
 });
-gsap.to(".sample_boxes_shutter3, .sample_boxes_shutter4", {
+gsap.to(".sample_boxes_shutter2", {
    y: "-100%",
    duration: 0.5,
    scrollTrigger: {
-      trigger: ".sample_boxes_shutter3, .sample_boxes_shutter4",
+      trigger: ".sample_boxes_shutter2",
+      start: "top 85%",
+   },
+});
+gsap.to(".sample_boxes_shutter3", {
+   y: "-100%",
+   duration: 0.5,
+   scrollTrigger: {
+      trigger: ".sample_boxes_shutter3",
+      start: "top 85%",
+   },
+});
+gsap.to(".sample_boxes_shutter4", {
+   y: "-100%",
+   duration: 0.5,
+   scrollTrigger: {
+      trigger: ".sample_boxes_shutter4",
       start: "top 85%",
    },
 });

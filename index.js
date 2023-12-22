@@ -12,20 +12,28 @@ gsap.ticker.lagSmoothing(0);
 const hamburgerBtn = document.querySelector("#hamburger_button");
 hamburgerBtn.addEventListener("click", () => {
    var hamburgerAtt = hamburgerBtn.getAttribute("data-hamburger-click");
-   var menu = document.querySelector(".menu");
-   var nav = document.querySelector("nav");
 
    if (hamburgerAtt === "false") {
       hamburgerBtn.setAttribute("data-hamburger-click", "true");
-      gsap.to(menu, {
+      tl.to(".menu", {
          y: 0,
          duration: 0.6,
+         ease: "power1.inOut",
+      });
+      tl.to(".menu a p", {
+         y: 0,
+         duration: 0.5,
          ease: "power1.inOut",
       });
    }
    if (hamburgerAtt === "true") {
       hamburgerBtn.setAttribute("data-hamburger-click", "false");
-      gsap.to(menu, {
+      tl.to(".menu a p", {
+         y: "100%",
+         duration: 0.5,
+         ease: "power1.inOut",
+      });
+      tl.to(".menu", {
          y: "-100%",
          duration: 0.6,
          ease: "power1.inOut",

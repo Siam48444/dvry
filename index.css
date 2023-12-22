@@ -135,17 +135,22 @@ nav {
    transform: translateY(-100%);
 
    & a {
-      color: var(--White);
-      font-family: InterTight_Medium, Arial, Helvetica, sans-serif;
-      font-size: clamp(2.6rem, 7vw, 7vw);
-      letter-spacing: 1.2px;
       width: 100%;
+      overflow: hidden;
       padding-block: 1.3vh;
       padding-block: 1.3svh;
       transition: opacity 200ms ease-in-out;
 
       &:hover {
          opacity: 0.3;
+      }
+
+      & p {
+         color: var(--White);
+         font-family: InterTight_Medium, Arial, Helvetica, sans-serif;
+         font-size: clamp(3rem, 7vw, 7.2vw);
+         letter-spacing: 1.2px;
+         transform: translateY(100%);
       }
    }
 }

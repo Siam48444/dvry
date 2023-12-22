@@ -134,11 +134,14 @@ nav {
       background-color: var(--White);
       border-radius: 9em;
       transform-origin: center;
-      transition: opacity 200ms ease-in-out, translate 200ms ease-in-out, transform 200ms ease-in-out 200ms;
    }
 }
 
 #hamburger_button[data-hamburger-click="true"] {
+   & span {
+      transition: opacity 200ms ease-in-out, translate 200ms ease-in-out, transform 200ms ease-in-out 200ms;
+   }
+
    & span:nth-child(1) {
       translate: 0 0.55em;
       transform: rotate(45deg);
@@ -151,6 +154,11 @@ nav {
    & span:nth-child(3) {
       translate: 0 -0.55em;
       transform: rotate(-45deg);
+   }
+}
+#hamburger_button[data-hamburger-click="false"] {
+   & span {
+      transition: opacity 200ms ease-in-out 200ms, translate 200ms ease-in-out 200ms, transform 200ms ease-in-out;
    }
 }
 

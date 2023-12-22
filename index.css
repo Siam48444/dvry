@@ -43,6 +43,26 @@ html {
    src: url(Fonts/InterTight-Light.ttf);
 }
 
+#scrollIndicator {
+   background-color: #ecda30;
+   position: fixed;
+   inset: 0 0 auto 0;
+   width: 100%;
+   height: 0.2em;
+   transform-origin: left;
+   transform: scale(0, 1);
+   z-index: 99999;
+
+   animation: scroll_indication linear;
+   animation-timeline: scroll(block);
+}
+
+@keyframes scroll_indication {
+   to {
+      transform: scale(1, 1);
+   }
+}
+
 #loader {
    width: 100%;
    height: 100%;
@@ -51,7 +71,7 @@ html {
    align-items: center;
    justify-content: center;
    background-color: var(--White);
-   z-index: 999;
+   z-index: 9999999;
 
    & h3 {
       color: var(--Black);

@@ -68,6 +68,17 @@ gsap.from(".section3_title", {
    },
 });
 
+// Section4 scroll text appearing.
+gsap.from(".section4_title", {
+   opacity: 0,
+   x: "-20%",
+   duration: 0.5,
+   scrollTrigger: {
+      trigger: ".section4_title h1",
+      start: "top 80%",
+   },
+});
+
 // Section3 scroll boxes animation
 gsap.to(".sample_boxes_shutter1", {
    y: "-100%",

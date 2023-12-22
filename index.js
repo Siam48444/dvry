@@ -85,6 +85,7 @@ gsap.to(".sample_boxes_shutter2", {
       start: "top 85%",
    },
 });
+
 gsap.to(".sample_boxes_shutter3", {
    y: "-100%",
    duration: 0.5,

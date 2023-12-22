@@ -13,6 +13,7 @@ const hamburgerBtn = document.querySelector("#hamburger_button");
 hamburgerBtn.addEventListener("click", () => {
    var hamburgerAtt = hamburgerBtn.getAttribute("data-hamburger-click");
    var menu = document.querySelector(".menu");
+   var nav = document.querySelector("nav");
 
    if (hamburgerAtt === "false") {
       hamburgerBtn.setAttribute("data-hamburger-click", "true");

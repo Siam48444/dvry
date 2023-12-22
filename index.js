@@ -12,7 +12,6 @@ gsap.ticker.lagSmoothing(0);
 var tl = gsap.timeline();
 
 // hero load animations.
-
 tl.to("#loader h3", {
    opacity: 0,
    duration: 0.4,
@@ -58,12 +57,31 @@ gsap.from("#section2 h1", {
    },
 });
 
+// Section3 scroll text appearing.
+gsap.from(".section3_title", {
+   opacity: 0,
+   x: "-20%",
+   duration: 0.5,
+   scrollTrigger: {
+      trigger: ".section3_title h1",
+      start: "top 80%",
+   },
+});
+
 // Section3 scroll box shutter openning.
-gsap.to(".sample_boxes_shutter", {
+gsap.to(".sample_boxes_shutter1, .sample_boxes_shutter2", {
    y: "-100%",
    duration: 0.5,
    scrollTrigger: {
-      trigger: ".sample_boxes_shutter",
-      start: "top 80%",
+      trigger: ".sample_boxes_shutter1, .sample_boxes_shutter2",
+      start: "top 85%",
+   },
+});
+gsap.to(".sample_boxes_shutter3, .sample_boxes_shutter4", {
+   y: "-100%",
+   duration: 0.5,
+   scrollTrigger: {
+      trigger: ".sample_boxes_shutter3, .sample_boxes_shutter4",
+      start: "top 85%",
    },
 });

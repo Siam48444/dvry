@@ -261,7 +261,7 @@ nav {
    & svg {
       position: absolute;
       width: clamp(1em, 5vw, 3vw);
-      right: -10%;
+      right: -20%;
       top: 0;
    }
 }

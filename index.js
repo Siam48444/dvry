@@ -85,7 +85,6 @@ gsap.to(".sample_boxes_shutter2", {
       start: "top 85%",
    },
 });
-
 gsap.to(".sample_boxes_shutter3", {
    y: "-100%",
    duration: 0.5,
@@ -99,6 +98,40 @@ gsap.to(".sample_boxes_shutter4", {
    duration: 0.5,
    scrollTrigger: {
       trigger: ".sample_boxes_shutter4",
+      start: "top 85%",
+   },
+});
+
+// Section4 scroll boxes animation
+gsap.to(".sample_boxes_shutter5", {
+   y: "-100%",
+   duration: 0.5,
+   scrollTrigger: {
+      trigger: ".sample_boxes_shutter5",
+      start: "top 85%",
+   },
+});
+gsap.to(".sample_boxes_shutter6", {
+   y: "-100%",
+   duration: 0.5,
+   scrollTrigger: {
+      trigger: ".sample_boxes_shutter6",
+      start: "top 85%",
+   },
+});
+gsap.to(".sample_boxes_shutter7", {
+   y: "-100%",
+   duration: 0.5,
+   scrollTrigger: {
+      trigger: ".sample_boxes_shutter7",
+      start: "top 85%",
+   },
+});
+gsap.to(".sample_boxes_shutter8", {
+   y: "-100%",
+   duration: 0.5,
+   scrollTrigger: {
+      trigger: ".sample_boxes_shutter8",
       start: "top 85%",
    },
 });

@@ -252,7 +252,7 @@ nav {
    & h1 {
       color: var(--White);
       font-family: InterTight_Bold, Arial, Helvetica, sans-serif;
-      font-size: clamp(2.5rem, 13vw, 13vw);
+      font-size: clamp(2.5rem, 10vw, 10vw);
    }
 
    & svg {

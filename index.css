@@ -237,13 +237,16 @@ nav {
    }
 }
 
-#section3 {
+#section3,
+#section4 {
    width: 100%;
    overflow: hidden;
    padding: 2em clamp(1.5em, 6vw, 5.5vw);
+   margin-bottom: 10em;
 }
 
-.section3_title {
+.section3_title,
+.section4_title {
    position: relative;
    height: max-content;
    width: max-content;

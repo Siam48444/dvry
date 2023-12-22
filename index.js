@@ -68,7 +68,7 @@ gsap.from(".section3_title", {
    },
 });
 
-// Section3 scroll box shutter openning.
+// Section3 scroll boxes animation
 gsap.to(".sample_boxes_shutter1", {
    y: "-100%",
    duration: 0.5,

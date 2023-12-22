@@ -65,12 +65,12 @@ html {
 #section1 {
    width: 100%;
    height: max-content;
-   /* overflow: hidden; */
+   overflow: hidden;
 }
 
 nav {
    width: 100%;
-   padding: 1em clamp(2em, 6vw, 5.5vw);
+   padding: 1em clamp(1.5em, 6vw, 5.5vw);
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -124,7 +124,7 @@ nav {
    justify-content: flex-end;
    width: 100%;
    gap: 5em;
-   padding-inline: clamp(2em, 6vw, 5.5vw);
+   padding-inline: clamp(1.5em, 6vw, 5.5vw);
    padding-top: 12em;
    position: relative;
 
@@ -185,7 +185,7 @@ nav {
    grid-template-columns: repeat(3, 1fr);
    width: 100%;
    height: 20em;
-   padding: 3em clamp(2em, 6vw, 5.5vw);
+   padding: 3em clamp(1.5em, 6vw, 5.5vw);
 }
 
 .hero_bottom_left {
@@ -225,7 +225,7 @@ nav {
    display: flex;
    align-items: center;
    justify-content: center;
-   padding: 5em clamp(2em, 6vw, 5.5vw);
+   padding: 5em clamp(1.5em, 6vw, 5.5vw);
    overflow: hidden;
 
    & h1 {
@@ -240,7 +240,7 @@ nav {
 #section3 {
    width: 100%;
    overflow: hidden;
-   padding: 2em clamp(2em, 6vw, 5.5vw);
+   padding: 2em clamp(1.5em, 6vw, 5.5vw);
 }
 
 .section3_title {
@@ -307,7 +307,6 @@ nav {
    left: clamp(1em, 2vw, 2vw);
    bottom: clamp(1em, 2vw, 2vw);
    z-index: 3;
-   /* opacity: 0; */
    transition: 400ms ease-out;
    transition-property: opacity;
 
@@ -329,6 +328,7 @@ nav {
 @media (width <= 1000px) {
    .hero_main {
       padding-top: 4em;
+      gap: 3em;
    }
 
    .hero_line_divs {
@@ -369,6 +369,8 @@ nav {
    }
 
    .hero_main {
+      gap: 3em;
+
       & h1 {
          font-size: 4.5rem;
       }
@@ -381,6 +383,8 @@ nav {
 
 @media (width <= 500px) {
    .hero_main {
+      gap: 2em;
+
       & h1 {
          font-size: 3.5rem;
       }
@@ -389,11 +393,18 @@ nav {
    .hero_image_containers {
       width: 20em;
       height: 5em;
+      border-radius: 1em;
+   }
+
+   .sample_boxes {
+      border-radius: 1em;
    }
 }
 
 @media (width <= 400px) {
    .hero_main {
+      gap: 1em;
+
       & h1 {
          font-size: 15vw;
          letter-spacing: 3px;

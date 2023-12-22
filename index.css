@@ -26,7 +26,7 @@ html {
 
 :root {
    /* Colors */
-   --Black: #121212;
+   --Black: #080808;
    --White: #ffffff;
 }
 
@@ -279,7 +279,7 @@ nav {
    height: 100%;
 
    & svg {
-      width: clamp(1.3em, 2vw, 1.6vw);
+      width: clamp(1.5em, 2vw, 1.6vw);
       cursor: pointer;
    }
 }
@@ -294,7 +294,7 @@ nav {
    & p {
       color: var(--White);
       font-family: InterTight_Light, Arial, Helvetica, sans-serif;
-      font-size: clamp(0.9rem, 1.5vw, 1.2vw);
+      font-size: clamp(0.95rem, 1.5vw, 1.2vw);
       text-align: left;
       line-height: 1.4;
    }
@@ -387,22 +387,18 @@ nav {
    transition-property: scale;
 }
 
-#section3 .sample_boxes_title {
-   & h3 {
-      font-family: InterTight_Medium, Arial, Helvetica, sans-serif;
-      color: var(--White);
-      font-size: clamp(1.5rem, 5vw, 4vw);
-      letter-spacing: 2px;
-   }
+#section3 .sample_boxes_title h3 {
+   font-family: InterTight_Medium, Arial, Helvetica, sans-serif;
+   color: var(--White);
+   font-size: clamp(1.4rem, 5vw, 4vw);
+   letter-spacing: 2px;
 }
 
-#section4 .sample_boxes_title {
-   & h3 {
-      font-family: InterTight_Medium, Arial, Helvetica, sans-serif;
-      color: var(--White);
-      font-size: clamp(1.2rem, 3vw, 2.2vw);
-      letter-spacing: 2px;
-   }
+#section4 .sample_boxes_title h3 {
+   font-family: InterTight_Medium, Arial, Helvetica, sans-serif;
+   color: var(--White);
+   font-size: clamp(1.2rem, 3vw, 2.2vw);
+   letter-spacing: 2px;
 }
 
 .sample_boxes_title {
@@ -423,7 +419,7 @@ nav {
 
 @media (width <= 1000px) {
    .hero_main {
-      padding-top: 10em;
+      padding-top: 8em;
       gap: 3em;
    }
 

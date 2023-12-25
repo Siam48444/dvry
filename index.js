@@ -96,7 +96,7 @@ gsap.from(".section3_title", {
    x: "-20%",
    duration: 0.5,
    scrollTrigger: {
-      trigger: ".section3_title h1",
+      trigger: ".section3_title",
       start: "top 80%",
    },
 });
@@ -107,7 +107,7 @@ gsap.from(".section5_title", {
    x: "-20%",
    duration: 0.5,
    scrollTrigger: {
-      trigger: ".section5_title h1",
+      trigger: ".section5_title",
       start: "top 80%",
    },
 });
@@ -180,6 +180,17 @@ gsap.to(".sample_boxes_shutter8", {
    },
 });
 
+// Section4 scroll text appearing.
+gsap.from(".section4_title", {
+   opacity: 0,
+   x: "-20%",
+   duration: 0.5,
+   scrollTrigger: {
+      trigger: ".section4_title",
+      start: "top 80%",
+   },
+});
+
 // Section4 scroll boxes animation
 gsap.to(".sample_boxes_shutter9", {
    y: "-100%",
@@ -213,16 +224,3 @@ gsap.to(".sample_boxes_shutter12", {
       start: "top 85%",
    },
 });
-
-// Section4 scroll boxes animation
-// gsap.from(".section4_boxes", {
-//    scale: 1.2,
-//    y: "10%",
-//    scrollTrigger: {
-//       trigger: ".section4_boxes",
-//       start: "top 100%",
-//       end: "bottom 70%",
-//       markers: true,
-//       scrub: true,
-//    },
-// });

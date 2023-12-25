@@ -345,9 +345,17 @@ nav {
 #section4,
 #section5 {
    width: 100%;
-   overflow: hidden;
    padding: 2em clamp(1.5em, 6vw, 5.5vw);
    margin-bottom: 10em;
+}
+
+#section3,
+#section5 {
+   overflow: hidden;
+}
+
+#section4 {
+   overflow: visible;
 }
 
 .section3_title,
@@ -439,15 +447,21 @@ nav {
 
 .section4_content_div {
    width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 3em;
 }
 
 .section4_boxes {
    position: relative;
-   width: 80%;
+   width: 100%;
    overflow: hidden;
-   aspect-ratio: 16 / 6;
+   aspect-ratio: 16 / 9;
    border-radius: 1.5em;
    margin-inline: auto;
+   cursor: pointer;
 
    & img {
       width: 100%;
@@ -461,7 +475,7 @@ nav {
    position: absolute;
    left: clamp(1em, 2vw, 2vw);
    bottom: clamp(1em, 2vw, 2vw);
-   z-index: 2;
+   z-index: 1;
 
    & h3 {
       font-family: InterTight_Medium, Arial, Helvetica, sans-serif;

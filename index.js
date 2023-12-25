@@ -146,7 +146,7 @@ gsap.to(".sample_boxes_shutter4", {
    },
 });
 
-// Section4 scroll boxes animation
+// Section5 scroll boxes animation
 gsap.to(".sample_boxes_shutter5", {
    y: "-100%",
    duration: 0.5,
@@ -179,3 +179,50 @@ gsap.to(".sample_boxes_shutter8", {
       start: "top 85%",
    },
 });
+
+// Section4 scroll boxes animation
+gsap.to(".sample_boxes_shutter9", {
+   y: "-100%",
+   duration: 0.5,
+   scrollTrigger: {
+      trigger: ".sample_boxes_shutter9",
+      start: "top 85%",
+   },
+});
+gsap.to(".sample_boxes_shutter10", {
+   y: "-100%",
+   duration: 0.5,
+   scrollTrigger: {
+      trigger: ".sample_boxes_shutter10",
+      start: "top 85%",
+   },
+});
+gsap.to(".sample_boxes_shutter11", {
+   y: "-100%",
+   duration: 0.5,
+   scrollTrigger: {
+      trigger: ".sample_boxes_shutter11",
+      start: "top 85%",
+   },
+});
+gsap.to(".sample_boxes_shutter12", {
+   y: "-100%",
+   duration: 0.5,
+   scrollTrigger: {
+      trigger: ".sample_boxes_shutter12",
+      start: "top 85%",
+   },
+});
+
+// Section4 scroll boxes animation
+// gsap.from(".section4_boxes", {
+//    scale: 1.2,
+//    y: "10%",
+//    scrollTrigger: {
+//       trigger: ".section4_boxes",
+//       start: "top 100%",
+//       end: "bottom 70%",
+//       markers: true,
+//       scrub: true,
+//    },
+// });

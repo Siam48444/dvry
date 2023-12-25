@@ -45,10 +45,10 @@ hamburgerBtn.addEventListener("click", () => {
 var tl = gsap.timeline();
 
 // hero load animations.
-tl.to("#loader h3", {
+tl.to("#loader img", {
    opacity: 0,
    duration: 0.4,
-   delay: 0.3,
+   delay: 0.4,
    ease: "power1.inOut",
 });
 tl.to("#loader", {
@@ -101,13 +101,13 @@ gsap.from(".section3_title", {
    },
 });
 
-// Section4 scroll text appearing.
-gsap.from(".section4_title", {
+// Section5 scroll text appearing.
+gsap.from(".section5_title", {
    opacity: 0,
    x: "-20%",
    duration: 0.5,
    scrollTrigger: {
-      trigger: ".section4_title h1",
+      trigger: ".section5_title h1",
       start: "top 80%",
    },
 });
